@@ -1,10 +1,31 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Expense Manager - Expenses</title>
-</head>
-<body>
-<h1>List of Expenses</h1>
-<hr/>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Expense Manager - Expenses</title>
+    </head>
+    <body>
+        <h1>List of Expenses</h1>
+        <hr/>
+
+        <table border="1">
+            <thead>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </thead>
+            <tr th:each="expense : ${list}">
+
+                <td th:text="${expense.expenseName}"></td>
+                <td th:text="${expense.description}"></td>
+                <td th:text="${expense.amount}"></td>
+                <td th:text="${expense.getDateString()}"></td>
+
+            </tr>
+
+            <tbody>
+
+
+        </table>
+    </body>
 </html>
