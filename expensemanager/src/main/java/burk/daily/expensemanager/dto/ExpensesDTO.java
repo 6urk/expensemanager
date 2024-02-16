@@ -1,4 +1,4 @@
-package dto;
+package burk.daily.expensemanager.dto;
 
 import java.math.BigDecimal;
 import java.sql.Date;

@@ -1,4 +1,4 @@
-package entity;
+package burk.daily.expensemanager.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

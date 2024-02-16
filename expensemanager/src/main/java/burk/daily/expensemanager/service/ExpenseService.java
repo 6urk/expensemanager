@@ -1,12 +1,11 @@
-package service;
+package burk.daily.expensemanager.service;
 
-import dto.ExpensesDTO;
-import entity.Expense;
+import burk.daily.expensemanager.dto.ExpensesDTO;
+import burk.daily.expensemanager.entity.Expense;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ExpenseRepository;
+import burk.daily.expensemanager.repository.ExpenseRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
